@@ -1245,7 +1245,6 @@ installWireGuard(){
 				echo "::: Commands:"
 				echo ":::    sudo apt-get upgrade -y"
 				echo ":::    sudo shutdown -r now"
-				echo ":::    curl -L https://install.pivpn.io | bash"
 				exit 1
 			else
 				if (whiptail --title "Install WireGuard" --yesno "Your Raspberry Pi is running kernel package ${INSTALLED_KERNEL}, however the latest version is ${CANDIDATE_KERNEL}.\n\nInstalling WireGuard requires the latest kernel, so to continue, first you need to upgrade all packages, then reboot, and then run the script again.\n\nProceed to the upgrade?" ${r} ${c}); then
@@ -1260,7 +1259,7 @@ installWireGuard(){
 						fi
 					fi
 					if (whiptail --title "Reboot" --yesno "You need to reboot after upgrading to run the new kernel.\n\nWould you like to reboot now?" ${r} ${c}); then
-						whiptail --title "Rebooting" --msgbox "The system will now reboot.\n\nWhen you come back, just run the installation command again:\n\n    curl -L https://install.pivpn.io | bash" ${r} ${c}
+						whiptail --title "Rebooting" --msgbox "The system will now reboot.\n\nWhen you come back, just run the installation command again:\n" ${r} ${c}
 						printf "\\nRebooting system...\\n"
 						$SUDO sleep 3
 						$SUDO shutdown -r now
