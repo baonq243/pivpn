@@ -2,7 +2,7 @@
 # OpenVPN or WireGuard setup and configuration
 
 ######## VARIABLES #########
-pivpnGitUrl="https://github.com/baonq/pivpn.git"
+pivpnGitUrl="https://github.com/baonq243/pivpn.git"
 setupVarsFile="setupVars.conf"
 setupConfigDir="/etc/pivpn"
 tempsetupVarsFile="/tmp/setupVars.conf"
