@@ -14,7 +14,7 @@ Yêu cầu cài đặt:
 - Đảm bảo curl đã được cài đặt
 
 ```bash
-curl https://raw.githubusercontent.com/baonq/pivpn/main/auto_install/install.sh | bash
+curl https://raw.githubusercontent.com/baonq243/pivpn/main/auto_install/install.sh | bash
 ```
 
 ## Tham khảo:
